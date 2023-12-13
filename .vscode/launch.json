@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "print_double",
+            "request": "launch",
+            "mainClass": "print_double",
+            "projectName": "java_project_b6324777"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
