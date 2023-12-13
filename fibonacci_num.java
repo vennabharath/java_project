@@ -29,21 +29,12 @@ public class fibonacci_num {
             System.out.println(+array_fib[i] + "\t");
             if (i >= 2) {
                 double golden_ratio = (array_fib[i] / array_fib[i - 1]);
-                System.out.printf(" the golden ratio is: %.2f%n" + golden_ratio);
+                System.out.println(" the golden ratio is: " + golden_ratio);
             }
 
             if (i == 1) {
                 p = 0;
             }
-
-            // n = p + n ;
-            // temp =n ;
-            // // int p = temp;
-            // array_fib[i] = n;
-
-            // if (i == 1) {
-            // temp = 1;
-            // }
 
         }
         av_array(array_fib);
@@ -51,11 +42,13 @@ public class fibonacci_num {
 
     public static void av_array(int[] array_of_num) {
         int sum = 0;
+
         for (int i = 0; i < array_of_num.length; i++) {
             sum = sum + array_of_num[i];
         }
         System.out.println("The sum of numbers is: \n" + sum);
-        System.out.println("The average of numbers is: " + (sum / array_of_num.length));
+        double avg = (sum / array_of_num.length);
+        System.out.println("The average of numbers is: " + avg);
 
     }
 }
